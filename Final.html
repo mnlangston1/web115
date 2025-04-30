@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TaskFlow Solutions</title>
+    <link rel="stylesheet" href="Final.css">
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <div class="container">
+        <form id="taskForm">
+            <input type="text" id="taskName" placeholder="Enter task name" required/>
+            <select id="taskPriority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <label>
+                <input type="checkbox" id="taskImportant"/>
+                Important
+            </label>
+            <button type="submit" id="submitBtn">Add task</button>
+        </form>
+
+        <div class="sort">
+            <label>Sort by:</label>
+            <select id="sortBy">
+                <option value="priority">Priority</option>
+                <option value="date">Date Added</option>
+                <option value="completed">Completion Status</option>
+            </select>
+            <button id="sortBtn">Sort</button>
+        </div>
+        
+        <div id="taskManager"></div>
+    </div>
+    <script src="Final.js"></script>
+</body>
+</html>

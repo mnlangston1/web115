@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  input[type="text"] {
+    flex-grow: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  select,
+  input[type="checkbox"] {
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #004999;
+  }
+  
+  .task {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-left: 5px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-info {
+    flex-grow: 1;
+  }
+  
+  .task-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task[data-priority="High"] {
+    border-left-color: red;
+  }
+  
+  .task[data-priority="Medium"] {
+    border-left-color: orange;
+  }
+  
+  .task[data-priority="Low"] {
+    border-left-color: green;
+  }
+  
+  .important {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  .sort-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.sort-controls select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sort-controls button {
+    padding: 8px 12px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sort-controls button:hover {
+    background-color: #004999;
+}
+
+.edit-mode {
+    background-color: #ffcc00 !important;
+}
